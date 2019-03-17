@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<context:component-scan base-package="com.xworkz.web"></context:component-scan>
+
+
+<bean id="moviemap" class="java.util.HashMap">
+<constructor-arg>
+
+<map key-type="java.lang.String" value-type="java.lang.Double">
+<entry key="pvr" value="200.0"></entry>
+<entry key="inox" value="120.0"></entry>
+<entry key="gt" value="100.0"></entry>
+<entry key="local" value="150.0"></entry>
+<entry key="cinemax" value="300.0"></entry>
+</map>
+
+
+</constructor-arg>
+</bean>
+
+</beans>
